@@ -157,7 +157,7 @@ setMethod("QCmetrics", "ChIPQCsample", function(object){
    }
    if (length(rcc) == 0){
        rcc = 0
-   }	   
+   }
    res        = c(reads(object,FALSE),
                   signif((mapped(object)/reads(object,FALSE))*100,3),
                   signif((1-reads(object,TRUE)/reads(object,FALSE))*100,3),
@@ -169,6 +169,7 @@ setMethod("QCmetrics", "ChIPQCsample", function(object){
                   #signif(ReadLengthCrossCoverage(object),3),
                   signif(ssd(object),3),
                   signif(frip(object)*100,3))
+   res
    names(res) = c("Reads",
                   "Map%",
                   "Filt%",
