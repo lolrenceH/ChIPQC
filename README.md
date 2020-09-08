@@ -11,3 +11,6 @@ or
 ```
 BiocManager::install('shengqh/ChIPQC')
 ```
+
+
+Debugging 09/08/2020 Jianqiao Hu
