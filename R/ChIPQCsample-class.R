@@ -169,7 +169,7 @@ setMethod("QCmetrics", "ChIPQCsample", function(object){
                   #signif(ReadLengthCrossCoverage(object),3),
                   signif(ssd(object),3),
                   signif(frip(object)*100,3))
-   print(res)
+   message(paste('test if this shows up /n',res))
    names(res) = c("Reads",
                   "Map%",
                   "Filt%",
