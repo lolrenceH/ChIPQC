@@ -5,11 +5,11 @@ This is a folk of ChIPQC in bioconductor. I need to fix a bug in QCmetrics(ChIPQ
 Installation
 ```
 library(devtools)
-install_github("shengqh/ChIPQC")
+install_github("lolrenceH/ChIPQC")
 ```
 or
 ```
-BiocManager::install('shengqh/ChIPQC')
+BiocManager::install('lolrenceH/ChIPQC')
 ```
 
 
